@@ -11,7 +11,7 @@
 
 
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="260dp"
         android:id="@+id/imageView3"
         android:src="@drawable/servicios"/>
@@ -19,7 +19,7 @@
     <Button
         android:layout_width="140dp"
         android:layout_height="150dp"
-        android:id="@+id/button2"
+        android:id="@+id/btnColegios"
         android:layout_below="@+id/imageView3"
         android:background="@drawable/colegios"
         android:layout_marginLeft="30dp"/>

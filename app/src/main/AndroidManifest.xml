@@ -28,6 +28,23 @@
 
             android:name=".Servicios"
             android:label="@string/app_name" >
+            </activity>
+        <activity
+
+            android:name=".Acciones"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+
+            android:name=".EscogerUniversidad"
+            android:label="@string/app_name" >
+
+        </activity>
+
+        <activity
+
+            android:name=".Publicar"
+            android:label="@string/app_name" >
 
         </activity>
 

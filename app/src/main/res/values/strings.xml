@@ -3,4 +3,12 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string-array name="universidades_array">
+        <item>Catolica</item>
+        <item>Pacifico</item>
+        <item>Wiener</item>
+        <item>Lima</item>
+        <item>UPN</item>
+        <item>UTP</item>
+    </string-array>
 </resources>
