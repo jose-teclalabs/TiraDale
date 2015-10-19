@@ -1,22 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<RelativeLayout
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:id="@+id/relativeHome">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        android:id="@+id/textView"
-        android:layout_gravity="center_horizontal"
-        android:textSize="50dp" />
+
 
     <ImageView
-        android:layout_width="404dp"
-        android:layout_height="476dp"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
         android:id="@+id/imageView2"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/cmovilintro" />
+        android:src="@drawable/cabecerahome"
+        android:layout_gravity="top" />
 
-</LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imageView2"
+        android:background="@drawable/comoutilizar"
+        android:id="@+id/btnComoUtilizar" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnComoUtilizar"
+        android:background="@drawable/conoceservicios"
+        android:id="@+id/btnConocerServicios" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnConocerServicios"
+        android:background="@drawable/afiliacomunidad"
+        android:id="@+id/btnAfiliaComunidad" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnAfiliaComunidad"
+        android:background="@drawable/ultimanoticias"
+        android:id="@+id/btnUltimaNoticias" />
+
+</RelativeLayout>
+</ScrollView>
