@@ -18,15 +18,20 @@ public class EscogerUniversidad extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.escogeruniversidad);
         //universidades_array
-        Spinner spinner = (Spinner)findViewById(R.id.spnUniversidad);
+
+        final Spinner spinner = (Spinner)findViewById(R.id.spnUniversidad);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.universidades_array, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                String spinnerString = spinner.getSelectedItem().toString();
+                int nPos = spinner.getSelectedItemPosition();
                  if(jugada1 > 0 ){
                      Intent intObj = new Intent(EscogerUniversidad.this,Acciones.class);
+                     intObj.putExtra("txtColegio",spinnerString);
                      startActivity(intObj);
                  }
                 jugada1++;

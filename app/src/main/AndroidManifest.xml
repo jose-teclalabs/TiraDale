@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ipae.android.sigcomt.edu.tiradaleandroid" >
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -44,6 +46,13 @@
         <activity
 
             android:name=".Publicar"
+            android:label="@string/app_name" >
+
+        </activity>
+
+        <activity
+
+            android:name=".Resultados"
             android:label="@string/app_name" >
 
         </activity>

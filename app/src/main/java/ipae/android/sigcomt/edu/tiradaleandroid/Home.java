@@ -55,6 +55,8 @@ public class Home extends AppCompatActivity implements AdapterView.OnItemClickLi
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         Toast.makeText(this, "Pulsado " + values[i], Toast.LENGTH_SHORT).show();
+        //Intent intObj = new Intent(Home.this,Servicios.class);
+        //startActivity(intObj);
         mDrawer.closeDrawers();
     }
 
