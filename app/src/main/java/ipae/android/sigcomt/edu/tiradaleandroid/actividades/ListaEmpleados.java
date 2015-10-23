@@ -23,7 +23,7 @@ public class ListaEmpleados extends AppCompatActivity {
         setContentView(R.layout.listaempleados);
         listView= (ListView) findViewById(R.id.listView);
         // Crear adaptador y setear
-        adapter = new EmpleadoWS(this);
-        listView.setAdapter(adapter);
+       // adapter = new EmpleadoWS(this);
+        //listView.setAdapter(adapter);
     }
 }

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:id="@+id/txtUsuario"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editUsuario"
+        android:layout_toRightOf="@+id/txtUsuario"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clave"
+        android:id="@+id/txtClave"
+        android:layout_marginTop="60dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editClave"
+        android:layout_toRightOf="@+id/txtClave"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Empleado"
+        android:id="@+id/btnEnviarPost"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

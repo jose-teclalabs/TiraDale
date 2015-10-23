@@ -9,10 +9,8 @@ public class Empleados {
     private String usuario;
     private String clave;
 
-    public Empleados(Integer idUsuario, String usuario, String clave) {
-        this.idUsuario = idUsuario;
-        this.usuario = usuario;
-        this.clave = clave;
+    public Empleados() {
+
     }
 
     public Integer getIdUsuario() {

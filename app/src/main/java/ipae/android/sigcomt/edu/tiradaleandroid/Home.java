@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import ipae.android.sigcomt.edu.tiradaleandroid.actividades.EmpleadoActivity;
 import ipae.android.sigcomt.edu.tiradaleandroid.actividades.ListaEmpleados;
 
 /**
@@ -48,13 +49,21 @@ public class Home extends AppCompatActivity implements AdapterView.OnItemClickLi
         //Listener
         btnComoUtilizar.setOnClickListener(new URLBasico());
         btnConoceServicios.setOnClickListener(new URLBasico());
-        btnAfilateComunidad.setOnClickListener(new URLBasico());
+        //btnAfilateComunidad.setOnClickListener(new URLBasico());
       //  btnUltimoNoticias.setOnClickListener(new URLBasico());
 
         btnUltimoNoticias.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intObj = new Intent(Home.this,ListaEmpleados.class);
+                startActivity(intObj);
+            }
+        });
+
+        btnAfilateComunidad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intObj = new Intent(Home.this,EmpleadoActivity.class);
                 startActivity(intObj);
             }
         });

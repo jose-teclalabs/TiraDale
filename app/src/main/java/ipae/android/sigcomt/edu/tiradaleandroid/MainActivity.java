@@ -7,6 +7,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
     Button btnIngresar;
@@ -27,13 +31,11 @@ public class MainActivity extends AppCompatActivity {
     public class ButtonOnClick implements View.OnClickListener{
 
         public void onClick(View view){
-
             Intent intObj = new Intent(MainActivity.this,Home.class);
             startActivity(intObj);
-
         }
-
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
