@@ -14,9 +14,13 @@ import retrofit.http.Path;
  */
 public interface EmpleadoInterface {
 
-    @GET("/rest/empleados")      //here is the other url part.best way is to start using /
-    public void getEmpleados(@Body List<Empleados> empleado, Callback<Empleados> response);
-
     @POST("/rest/addEmpleado")
     void addVehicle(@Body Empleados empleado, Callback<Empleados> cb);
+
+    @GET("/rest/empleados")
+    void listRepos(Callback<List<Empleados>> cb);
+
+
+
+
 }
