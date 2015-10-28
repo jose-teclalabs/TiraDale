@@ -48,6 +48,10 @@ public class ListaEmpleados extends AppCompatActivity {
             @Override
             public void success(List<Empleados> tasks, Response response) {
             System.out.print(response.toString());
+                listAdapter = new EmpleadoWS(ListaEmpleados.this,0,tasks);
+                //setListAdapter(listAdapter);
+                listView.setAdapter(listAdapter);
+
                 String hola;
                 // here you do stuff with returned tasks
             }
