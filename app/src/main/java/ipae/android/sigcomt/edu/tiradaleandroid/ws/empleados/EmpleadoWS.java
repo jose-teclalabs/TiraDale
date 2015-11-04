@@ -42,9 +42,9 @@ public class EmpleadoWS extends ArrayAdapter {
         TextView tv = (TextView) view.findViewById(R.id.txtCodigoUsuario);
         TextView tv1 = (TextView) view.findViewById(R.id.txtUsuario);
         TextView tv2 = (TextView) view.findViewById(R.id.txtClave);
-        tv.setText(flower.getIdUsuario());
-        tv1.setText(flower.getUsuario());
-        tv2.setText(flower.getClave());
+        tv.setText(flower.getIdUsuario().toString());
+        tv1.setText(flower.getUsuario().toString());
+        tv2.setText(flower.getClave().toString());
         return view;
     }
 
