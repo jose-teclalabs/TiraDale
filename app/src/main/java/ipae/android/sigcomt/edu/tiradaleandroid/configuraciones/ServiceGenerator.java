@@ -1,13 +1,15 @@
 package ipae.android.sigcomt.edu.tiradaleandroid.configuraciones;
 
+import com.squareup.okhttp.OkHttpClient;
+
 import retrofit.RequestInterceptor;
 import retrofit.RestAdapter;
 import retrofit.client.OkClient;
-import com.squareup.okhttp.OkHttpClient;
 
 /**
  * Created by jpulido on 27/10/2015.
  */
+
 public class ServiceGenerator {
 
     public static final String API_BASE_URL = "http://10.0.3.2:8088/Farmacia";
@@ -31,6 +33,7 @@ public class ServiceGenerator {
                 }
             });
         }
+
 
         RestAdapter adapter = builder.build();
         return adapter.create(serviceClass);

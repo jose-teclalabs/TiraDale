@@ -23,5 +23,14 @@
         android:layout_below="@+id/imageView3"
         android:background="@drawable/colegios"
         android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:id="@+id/btnSedes"
+        android:background="@drawable/titulo"
+        android:layout_below="@+id/imageView3"
+        android:layout_toRightOf="@+id/btnColegios"
+        android:layout_toEndOf="@+id/btnColegios" />
 </RelativeLayout>
 </ScrollView>

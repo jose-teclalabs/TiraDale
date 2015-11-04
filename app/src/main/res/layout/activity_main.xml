@@ -2,7 +2,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/ScrollView01"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content" >
+    android:layout_height="wrap_content"
+
+   >
 
 
 
@@ -10,8 +12,9 @@
     android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="0dp"
-    android:paddingBottom="100dp"
+    android:paddingBottom="190dp"
     android:background="#ff6523"
+
    >
 
     <TableLayout
@@ -74,11 +77,12 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="200dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
             android:text="Ingresar"
             android:background="@drawable/rounded_button"
             android:gravity="center"
+
             android:id="@+id/button"
             android:layout_column="8" />
 

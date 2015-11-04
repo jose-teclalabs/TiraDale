@@ -9,41 +9,40 @@ import java.util.List;
 
 import ipae.android.sigcomt.edu.tiradaleandroid.R;
 import ipae.android.sigcomt.edu.tiradaleandroid.configuraciones.ServiceGenerator;
-import ipae.android.sigcomt.edu.tiradaleandroid.interfaces.EmpleadoInterface;
-import ipae.android.sigcomt.edu.tiradaleandroid.modelos.Empleados;
+import ipae.android.sigcomt.edu.tiradaleandroid.interfaces.SedeInterface;
+import ipae.android.sigcomt.edu.tiradaleandroid.modelos.Sedes;
 import retrofit.Callback;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
 
 /**
- * Created by jpulido on 21/10/2015.
+ * Created by gcampos on 02/11/2015.
  */
-public class ListaEmpleados extends AppCompatActivity {
+public class ListaSedes extends AppCompatActivity {
 
     ListView listView;
     ArrayAdapter listAdapter;
-    List<Empleados> flowerList;
+    List<Sedes> flowerList;
     String url = "http://10.0.3.2:8088/Farmacia";
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.listaempleados);
-        listView= (ListView) findViewById(R.id.listView2);
+        setContentView(R.layout.listasedes);
+        listView= (ListView) findViewById(R.id.listView3);
 
-      //  RestAdapter restAdapter = new RestAdapter.Builder()
-     //           .setEndpoint(url)
-     //           .build();
 
-       // EmpleadoInterface flowerapi = restAdapter.create(EmpleadoInterface.class);
+        //  RestAdapter restAdapter = new RestAdapter.Builder()
+        //           .setEndpoint(url)
+        //           .build();
 
-       EmpleadoInterface flowerapi = ServiceGenerator.createService(EmpleadoInterface.class);
+        // EmpleadoInterface flowerapi = restAdapter.create(EmpleadoInterface.class);
 
-     //   List<Empleados> empl = flowerapi.listRepos();
-
-        flowerapi.listRepos(new Callback<List<Empleados>>() {
+        SedeInterface flowerapi1 = ServiceGenerator.createService(SedeInterface.class);
+        //   List<Empleados> empl = flowerapi.listRepos();
+        flowerapi1.listsede(new Callback<List<Sedes>>() {
             @Override
-            public void success(List<Empleados> tasks, Response response) {
-            System.out.print(response.toString());
+            public void success(List<Sedes> tasks, Response response) {
+                System.out.print(response.toString());
                 String hola;
                 // here you do stuff with returned tasks
             }
@@ -57,7 +56,10 @@ public class ListaEmpleados extends AppCompatActivity {
         });
     }
 
-    public ArrayAdapter getListAdapter() {return listAdapter;}
+
+    public ArrayAdapter getListAdapter() {
+        return listAdapter;
+    }
 
     public void setListAdapter(ArrayAdapter listAdapter) {
         this.listAdapter = listAdapter;
@@ -70,4 +72,5 @@ public class ListaEmpleados extends AppCompatActivity {
     public void setListView(ListView listView) {
         this.listView = listView;
     }
+
 }
