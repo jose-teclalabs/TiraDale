@@ -71,16 +71,16 @@
             android:gravity="center"
             android:padding="5dip"
             android:id="@+id/txtClave"
-            android:layout_column="8" />
+            android:layout_column="8"
+            android:password="true" />
 
         <Button
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_width="136dp"
+            android:layout_height="46dp"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="100dp"
             android:layout_marginRight="100dp"
-            android:text="Ingresar"
-            android:background="@drawable/rounded_button"
+            android:background="@drawable/ingresar"
             android:gravity="center"
 
             android:id="@+id/button"

@@ -2,12 +2,14 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/ScrollView01"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent"
+    >
 
 <RelativeLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="650dp"
+    >
 
 
     <ImageView
@@ -17,20 +19,86 @@
         android:src="@drawable/servicios"/>
 
     <Button
-        android:layout_width="140dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:id="@+id/btnColegios"
         android:layout_below="@+id/imageView3"
         android:background="@drawable/colegios"
         android:layout_marginLeft="30dp"/>
 
     <Button
-        android:layout_width="140dp"
-        android:layout_height="150dp"
-        android:id="@+id/btnSedes"
-        android:background="@drawable/titulo"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/button2"
+        android:background="@drawable/colegios"
+        android:gravity="center"
         android:layout_below="@+id/imageView3"
         android:layout_toRightOf="@+id/btnColegios"
         android:layout_toEndOf="@+id/btnColegios" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/button3"
+        android:background="@drawable/colegios"
+        android:layout_below="@+id/imageView3"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/button4"
+        android:background="@drawable/colegios"
+        android:layout_below="@+id/btnColegios"
+        android:layout_alignLeft="@+id/btnColegios"
+        android:layout_alignStart="@+id/btnColegios" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/button5"
+        android:background="@drawable/colegios"
+        android:layout_below="@+id/button2"
+        android:layout_toRightOf="@+id/btnColegios"
+        android:layout_toEndOf="@+id/btnColegios" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/button6"
+        android:background="@drawable/colegios"
+        android:layout_below="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/button7"
+        android:background="@drawable/colegios"
+        android:layout_below="@+id/button4"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/button8"
+        android:background="@drawable/colegios"
+        android:layout_below="@+id/button5"
+        android:layout_toRightOf="@+id/button7"
+        android:layout_toEndOf="@+id/button7" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/button9"
+        android:background="@drawable/colegios"
+        android:layout_below="@+id/button5"
+        android:layout_toRightOf="@+id/button5"
+        android:layout_toEndOf="@+id/button5" />
+
 </RelativeLayout>
 </ScrollView>

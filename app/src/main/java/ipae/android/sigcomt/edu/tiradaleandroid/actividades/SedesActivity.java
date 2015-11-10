@@ -42,6 +42,8 @@ public class SedesActivity extends AppCompatActivity {
                 String param1 = txtBusqueda.getText().toString();
 
                 postData(param1);
+               txtBusqueda.setText("");
+
 
                 // Intent intObj = new Intent(Home.this,ListaEmpleados.class);
                 // startActivity(intObj);

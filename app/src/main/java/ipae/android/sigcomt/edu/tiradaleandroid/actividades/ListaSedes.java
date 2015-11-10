@@ -11,6 +11,7 @@ import ipae.android.sigcomt.edu.tiradaleandroid.R;
 import ipae.android.sigcomt.edu.tiradaleandroid.configuraciones.ServiceGenerator;
 import ipae.android.sigcomt.edu.tiradaleandroid.interfaces.SedeInterface;
 import ipae.android.sigcomt.edu.tiradaleandroid.modelos.Sedes;
+import ipae.android.sigcomt.edu.tiradaleandroid.ws.empleados.SedeWS;
 import retrofit.Callback;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
@@ -30,21 +31,22 @@ public class ListaSedes extends AppCompatActivity {
         setContentView(R.layout.listasedes);
         listView= (ListView) findViewById(R.id.listView3);
 
-
         //  RestAdapter restAdapter = new RestAdapter.Builder()
         //           .setEndpoint(url)
         //           .build();
 
         // EmpleadoInterface flowerapi = restAdapter.create(EmpleadoInterface.class);
 
-        SedeInterface flowerapi1 = ServiceGenerator.createService(SedeInterface.class);
+        SedeInterface flowerapi = ServiceGenerator.createService(SedeInterface.class);
         //   List<Empleados> empl = flowerapi.listRepos();
-        flowerapi1.listsede(new Callback<List<Sedes>>() {
+        flowerapi.listsede(new Callback<List<Sedes>>() {
             @Override
             public void success(List<Sedes> tasks, Response response) {
                 System.out.print(response.toString());
+                listAdapter = new SedeWS(ListaSedes.this,0,tasks);
+                //setListAdapter(listAdapter);
+                listView.setAdapter(listAdapter);
                 String hola;
-                // here you do stuff with returned tasks
             }
 
             @Override

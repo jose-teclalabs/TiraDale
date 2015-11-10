@@ -1,52 +1,36 @@
 package ipae.android.sigcomt.edu.tiradaleandroid.ws.empleados;
 
-import android.app.Activity;
 import android.content.Context;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.TextView;
 
 import java.util.List;
 
-import ipae.android.sigcomt.edu.tiradaleandroid.R;
 import ipae.android.sigcomt.edu.tiradaleandroid.interfaces.SedeInterface;
 import ipae.android.sigcomt.edu.tiradaleandroid.modelos.Sedes;
 import retrofit.Callback;
 import retrofit.RestAdapter;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
+
 /**
- * Created by gcampos on 28/10/2015.
+ * Created by gcampos on 05/11/2015.
  */
-public class SedeWS extends ArrayAdapter {
+public class LoginWS extends ArrayAdapter {
 
     private Context context;
     private List<Sedes> sedesList;
 
-    public SedeWS(Context context, int resource, List<Sedes> objects) {
+    public LoginWS(Context context, int resource, List<Sedes> objects) {
+
         super(context, resource, objects);
         this.context = context;
         this.sedesList = objects;
+
     }
 
-    @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.sede, parent, false);
-        Sedes flower = sedesList.get(position);
-        TextView tv = (TextView) view.findViewById(R.id.txtCodigoSede);
-        TextView tv1 = (TextView) view.findViewById(R.id.txtDescripcion);
-
-        tv.setText(flower.getIdSede().toString());
-        tv1.setText(flower.getDescripcion().toString());
-
-        return view;
-    }
 
     //postdata
-    private void postData(final String param1){
+    private void postDataLogin(final String param1){
         String url = "http://10.0.3.2:8088/Farmacia";
         RestAdapter vehicleAdapter = new RestAdapter.Builder().setEndpoint(
                 url).build();
@@ -75,8 +59,6 @@ public class SedeWS extends ArrayAdapter {
                 //gets called when a network error occurs
                 throw new RuntimeException("Error! " + error.getMessage());
             }
-
-
 
         });
     }

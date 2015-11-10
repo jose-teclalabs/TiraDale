@@ -11,6 +11,7 @@ import ipae.android.sigcomt.edu.tiradaleandroid.R;
 import ipae.android.sigcomt.edu.tiradaleandroid.configuraciones.ServiceGenerator;
 import ipae.android.sigcomt.edu.tiradaleandroid.interfaces.EmpleadoInterface;
 import ipae.android.sigcomt.edu.tiradaleandroid.modelos.Empleados;
+import ipae.android.sigcomt.edu.tiradaleandroid.ws.empleados.EmpleadoWS;
 import retrofit.Callback;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
@@ -49,6 +50,7 @@ public class ListaEmpleados extends AppCompatActivity {
                 listView.setAdapter(listAdapter);
 
                 String hola;
+
                 // here you do stuff with returned tasks
             }
 

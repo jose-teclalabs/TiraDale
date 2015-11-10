@@ -1,28 +1,16 @@
 package ipae.android.sigcomt.edu.tiradaleandroid.actividades;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.HashMap;
-import java.util.Map;
 
 import ipae.android.sigcomt.edu.tiradaleandroid.R;
 import ipae.android.sigcomt.edu.tiradaleandroid.interfaces.EmpleadoInterface;
 import ipae.android.sigcomt.edu.tiradaleandroid.modelos.Empleados;
-import ipae.android.sigcomt.edu.tiradaleandroid.ws.empleados.EmpleadoWS;
-import retrofit.RestAdapter;
 import retrofit.Callback;
+import retrofit.RestAdapter;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
 
@@ -45,6 +33,7 @@ public class EmpleadoActivity extends AppCompatActivity {
         btnAceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String param1 = txtUsuario.getText().toString();
                 String param2 = txtClave.getText().toString();
                 postData(param1, param2);
