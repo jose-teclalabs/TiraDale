@@ -8,97 +8,192 @@
 <RelativeLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="650dp"
+    android:layout_height="match_parent"
+
     >
 
 
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="260dp"
-        android:id="@+id/imageView3"
-        android:src="@drawable/servicios"/>
+    <TableLayout
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/btnColegios"
-        android:layout_below="@+id/imageView3"
-        android:background="@drawable/colegios"
-        android:layout_marginLeft="30dp"/>
-
-    <Button
-
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/button2"
-        android:background="@drawable/colegios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="center"
-        android:layout_below="@+id/imageView3"
-        android:layout_toRightOf="@+id/btnColegios"
-        android:layout_toEndOf="@+id/btnColegios" />
+        android:paddingTop="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tableLayout"
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/button3"
-        android:background="@drawable/colegios"
-        android:layout_below="@+id/imageView3"
-        android:layout_toRightOf="@+id/button2"
-        android:layout_toEndOf="@+id/button2" />
+        android:layout_below="@+id/imgSlider">
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/button4"
-        android:background="@drawable/colegios"
-        android:layout_below="@+id/btnColegios"
-        android:layout_alignLeft="@+id/btnColegios"
-        android:layout_alignStart="@+id/btnColegios" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/button5"
-        android:background="@drawable/colegios"
-        android:layout_below="@+id/button2"
-        android:layout_toRightOf="@+id/btnColegios"
-        android:layout_toEndOf="@+id/btnColegios" />
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/button6"
-        android:background="@drawable/colegios"
-        android:layout_below="@+id/button2"
-        android:layout_toRightOf="@+id/button2"
-        android:layout_toEndOf="@+id/button2" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/btnColegios"
+                android:background="@drawable/colegios"
+                android:layout_gravity="left|top"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_column="0" />
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/button7"
-        android:background="@drawable/colegios"
-        android:layout_below="@+id/button4"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_alignStart="@+id/button4" />
+            <Button
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/button8"
-        android:background="@drawable/colegios"
-        android:layout_below="@+id/button5"
-        android:layout_toRightOf="@+id/button7"
-        android:layout_toEndOf="@+id/button7" />
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/btnUniversidades"
+                android:gravity="center"
+                android:layout_below="@+id/imgSlider"
+                android:layout_toRightOf="@+id/btnColegios"
+                android:layout_toEndOf="@+id/btnColegios"
+                android:background="@drawable/universidades"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_column="11" />
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/button9"
-        android:background="@drawable/colegios"
-        android:layout_below="@+id/button5"
-        android:layout_toRightOf="@+id/button5"
-        android:layout_toEndOf="@+id/button5" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/btnInstitutos"
+                android:background="@drawable/institutos"
+
+
+
+                android:layout_column="12" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/btnRestaurants"
+                android:background="@drawable/restaurants"
+                android:layout_below="@+id/btnColegios"
+                android:layout_alignLeft="@+id/btnColegios"
+                android:layout_alignStart="@+id/btnColegios"
+                android:layout_gravity="left|center_vertical"
+                android:layout_column="0" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/btnBancos"
+                android:background="@drawable/bancos"
+                android:layout_column="11" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/btnCines"
+                android:background="@drawable/cines"
+                android:layout_below="@+id/btnUniversidades"
+                android:layout_toRightOf="@+id/btnUniversidades"
+                android:layout_toEndOf="@+id/btnUniversidades"
+                android:layout_gravity="right|center_vertical"
+                android:layout_column="12" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/btnDistritos"
+                android:background="@drawable/distritos"
+                android:layout_gravity="left|bottom"
+                android:layout_below="@+id/btnRestaurants"
+                android:layout_alignLeft="@+id/btnRestaurants"
+                android:layout_alignStart="@+id/btnRestaurants"
+                android:layout_column="0" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/btnTiendas"
+                android:background="@drawable/tiendas"
+
+
+                android:layout_below="@+id/btnRestaurants"
+                android:layout_toRightOf="@+id/btnDistritos"
+                android:layout_toEndOf="@+id/btnDistritos"
+                android:layout_column="11" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/btnFarmacias"
+                android:background="@drawable/farmacias"
+
+                android:layout_below="@+id/btnBancos"
+                android:layout_toRightOf="@+id/btnBancos"
+                android:layout_toEndOf="@+id/btnBancos"
+                android:layout_column="12" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:id="@+id/imgSlider"
+        android:background="@drawable/slide"
+        android:layout_below="@+id/viewLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/viewLogo"
+        android:background="@drawable/logo"
+        />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/menu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Servicios"
+        android:id="@+id/textView5"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/imgSlider"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#f1e4ff"
+        android:layout_alignRight="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageButton"
+        android:background="#ff7124" />
+
+
+
 
 </RelativeLayout>
+
+
+
+
 </ScrollView>

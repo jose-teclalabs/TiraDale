@@ -65,6 +65,7 @@ public class Home extends AppCompatActivity implements AdapterView.OnItemClickLi
             public void onClick(View v) {
                 Intent intObj = new Intent(Home.this,EmpleadoActivity.class);
                 startActivity(intObj);
+
             }
         });
 

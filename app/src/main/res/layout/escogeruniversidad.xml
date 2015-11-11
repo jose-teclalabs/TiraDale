@@ -14,8 +14,23 @@
     <Spinner
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/spnUniversidad"
         android:layout_below="@+id/imgTitulo"
-        android:id="@+id/spnUniversidad">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp">
     </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Universidad:"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/imgTitulo"
+        android:layout_toLeftOf="@+id/imgTitulo"
+        android:layout_toStartOf="@+id/imgTitulo"
+        android:layout_marginTop="30dp"
+        android:textColor="#030000" />
 
 </RelativeLayout>
